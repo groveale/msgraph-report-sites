@@ -17,4 +17,7 @@ Export-Certificate -Cert $cert -FilePath "C:\Users\alexgrover\$certname.cer"   #
 $cert.Thumbprint
 ```
 
+Quite accurate during testing
+
+![Proof](./res/proof.png)
 
