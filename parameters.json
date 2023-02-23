@@ -1,0 +1,18 @@
+{
+    "tenantId": {
+        "Value": "75e67881-b174-484b-9d30-c581c7ebc177",
+        "Description": "Id of the tenant."
+    },
+    "spStorageMetricsAppId": {
+        "Value": "34f4c95f-0249-4568-a3b7-90eb4483a589",
+        "Description": "Client Id of the SPO Storage Metrics Azure Active Directory application."
+    },
+    "thumbprint" : {
+        "Value": "46EF268F89C9B78E023D9927013413FE77553119",
+        "Description": "Thumbprint of the certific from the device running SPO Storage Metrics script."
+    },
+    "outputDir": {
+        "Value": "./SitesSize.csv",
+        "Description": "Output path for the report."
+    }
+}
