@@ -13,7 +13,7 @@ function ConnectToMSGraph ($parameters) {
 function GetPHDriveData {
 
     $output = @()
-    $sites = Get-MgSite -Property "id, webUrl"
+    $sites = Get-MgSite -Property "id, webUrl" -All
 
     foreach($site in $sites)
     {
@@ -25,7 +25,7 @@ function GetPHDriveData {
         $siteSize = 0
         $phSize = $false
 
-        [array]$drives = Get-MgSiteDrive -SiteId $site.id
+        [array]$drives = Get-MgSiteDrive -SiteId $site.id -All
 
         if ($drives.Length -gt 0)
         {
